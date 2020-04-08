@@ -1,0 +1,7 @@
+.background {
+    -fx-background-image: url("../img/lightbg.jpg");
+    -fx-background-size: 1280px 720px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center
+
+}

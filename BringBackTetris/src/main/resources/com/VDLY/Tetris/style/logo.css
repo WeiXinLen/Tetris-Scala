@@ -1,0 +1,7 @@
+.background {
+    -fx-background-image: url("../img/tetlogo.png");
+    -fx-background-size: 400px 200px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center
+
+}

@@ -1,0 +1,7 @@
+.btn {
+    -fx-color: #FFF;
+    -fx-width: 120px;
+    -fx-height: 120px;
+    -fx-line-height: 120px;
+    -fx-border-radius: 50%
+}

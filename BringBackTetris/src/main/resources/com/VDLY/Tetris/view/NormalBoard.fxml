@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tetris" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="@../style/MPstyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VDLY.Tetris.view.TetrisGameController">
+    <children>
+        <GridPane fx:id="tetrisBoard" alignment="CENTER" layoutX="526.0" layoutY="116.0" opacity="0.7" prefHeight="561.0" prefWidth="301.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <VBox layoutX="874.0" layoutY="105.0" prefHeight="23.0" prefWidth="111.0" spacing="20.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="269.0" text="Score" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="269.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+            </children>
+        </VBox>
+        <GridPane fx:id="nextPieceBoard" layoutX="1021.0" layoutY="159.0" opacity="0.7" prefHeight="125.0" prefWidth="137.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Label layoutX="1048.0" layoutY="116.0" text="Next Piece" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Button layoutX="1336.0" layoutY="729.0" mnemonicParsing="false" />
+        <GridPane layoutX="852.0" layoutY="368.0" prefHeight="157.0" prefWidth="156.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="66.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="116.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Move Left" textFill="WHITE" GridPane.columnIndex="1" />
+                <Label text="Move Right" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Hard Drop" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Left" textFill="WHITE" />
+                <Label text="Right" textFill="WHITE" GridPane.rowIndex="1" />
+                <Label text="Enter" textFill="WHITE" GridPane.rowIndex="4" />
+                <Label text="Down" textFill="WHITE" GridPane.rowIndex="2" />
+                <Label text="Up" textFill="WHITE" GridPane.rowIndex="3" />
+                <Label text="Move Down" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Rotate" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="P" textFill="WHITE" GridPane.rowIndex="5" />
+                <Label text="Pause Game" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            </children>
+        </GridPane>
+        <Label alignment="CENTER" layoutX="865.0" layoutY="330.0" prefHeight="25.0" prefWidth="84.0" text="Controller" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="showPaused" alignment="CENTER" layoutX="519.0" layoutY="411.0" prefHeight="100.0" prefWidth="329.0">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+      <Button layoutX="890.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleNormalRules" text="Game Rules" />
+      <Button layoutX="78.0" layoutY="56.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+    </children>
+</AnchorPane>

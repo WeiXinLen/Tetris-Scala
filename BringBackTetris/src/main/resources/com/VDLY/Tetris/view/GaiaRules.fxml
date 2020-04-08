@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="322.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VDLY.Tetris.view.GaiaRulesController">
+
+    <children>
+        <GridPane layoutX="40.0" layoutY="85.0" prefHeight="165.0" prefWidth="526.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="60.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="466.0" minWidth="10.0" prefWidth="466.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="1" />
+                <Label text="2" GridPane.rowIndex="1" />
+                <Label text="3" GridPane.rowIndex="2" />
+                <Label text="5" GridPane.rowIndex="4" />
+                <Label text="4" GridPane.rowIndex="3" />
+                <Label fx:id="rule1Label" GridPane.columnIndex="1" />
+                <Label fx:id="rule2Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="rule3Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label fx:id="rule4Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="rule5Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+        <AnchorPane layoutX="114.0" layoutY="14.0" prefHeight="71.0" prefWidth="365.0">
+            <children>
+                <Label layoutX="86.0" layoutY="13.0" text="Game Rules" textFill="#8f6647">
+               <font>
+                  <Font size="31.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+        <Button layoutX="453.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="72.0" text="OK" />
+    </children>
+
+</AnchorPane>
